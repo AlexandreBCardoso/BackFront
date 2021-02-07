@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Desafio_DatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dados do Usuário" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmc-cR-Er2">
+                                <rect key="frame" x="10" y="94" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eSV-46-Wu4">
+                                <rect key="frame" x="30" y="195" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ARb-pU-OmC">
+                                <rect key="frame" x="30" y="249" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="FJc-7f-a0e">
+                                <rect key="frame" x="30" y="303" width="354" height="216"/>
+                                <connections>
+                                    <action selector="tappedDatePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="BBG-qy-OSx"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqB-8E-YvI">
+                                <rect key="frame" x="30" y="559" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aw3-pq-tjc">
+                                <rect key="frame" x="30" y="600" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Nascimento: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiS-ow-l1F">
+                                <rect key="frame" x="30" y="641" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Aw3-pq-tjc" firstAttribute="leading" secondItem="gqB-8E-YvI" secondAttribute="leading" id="ACk-Vu-Ieu"/>
+                            <constraint firstItem="gqB-8E-YvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Di2-Kc-3JL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eSV-46-Wu4" secondAttribute="trailing" constant="30" id="EZ9-hz-SnJ"/>
+                            <constraint firstItem="Aw3-pq-tjc" firstAttribute="trailing" secondItem="gqB-8E-YvI" secondAttribute="trailing" id="KQg-wE-3RM"/>
+                            <constraint firstItem="FJc-7f-a0e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="KTm-Sh-DI3"/>
+                            <constraint firstItem="Aw3-pq-tjc" firstAttribute="top" secondItem="gqB-8E-YvI" secondAttribute="bottom" constant="20" id="LyY-1i-FJV"/>
+                            <constraint firstAttribute="trailing" secondItem="FJc-7f-a0e" secondAttribute="trailing" constant="30" id="N29-cy-Toc"/>
+                            <constraint firstItem="FJc-7f-a0e" firstAttribute="top" secondItem="ARb-pU-OmC" secondAttribute="bottom" constant="20" id="Nw1-3f-Psl"/>
+                            <constraint firstItem="gqB-8E-YvI" firstAttribute="top" secondItem="FJc-7f-a0e" secondAttribute="bottom" constant="40" id="Qtk-L0-UaQ"/>
+                            <constraint firstItem="eSV-46-Wu4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="T2K-hp-Ff8"/>
+                            <constraint firstItem="ARb-pU-OmC" firstAttribute="top" secondItem="eSV-46-Wu4" secondAttribute="bottom" constant="20" id="e0X-sl-eem"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gqB-8E-YvI" secondAttribute="trailing" constant="30" id="fVd-3A-pQP"/>
+                            <constraint firstItem="OiS-ow-l1F" firstAttribute="top" secondItem="Aw3-pq-tjc" secondAttribute="bottom" constant="20" id="fjc-8D-BbC"/>
+                            <constraint firstItem="ARb-pU-OmC" firstAttribute="trailing" secondItem="eSV-46-Wu4" secondAttribute="trailing" id="hpZ-Hf-tGt"/>
+                            <constraint firstItem="OiS-ow-l1F" firstAttribute="trailing" secondItem="Aw3-pq-tjc" secondAttribute="trailing" id="mLJ-Uv-9Su"/>
+                            <constraint firstItem="ARb-pU-OmC" firstAttribute="leading" secondItem="eSV-46-Wu4" secondAttribute="leading" id="mle-7j-M4Q"/>
+                            <constraint firstItem="Qmc-cR-Er2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="tU9-bE-OPU"/>
+                            <constraint firstItem="OiS-ow-l1F" firstAttribute="leading" secondItem="Aw3-pq-tjc" secondAttribute="leading" id="vsg-lN-J9b"/>
+                            <constraint firstItem="eSV-46-Wu4" firstAttribute="top" secondItem="Qmc-cR-Er2" secondAttribute="bottom" constant="80" id="wNh-yi-ykh"/>
+                            <constraint firstItem="Qmc-cR-Er2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="wxy-iI-iar"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qmc-cR-Er2" secondAttribute="trailing" constant="10" id="zTu-L5-LWz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataNascimentoLabel" destination="OiS-ow-l1F" id="Z8t-D1-M1W"/>
+                        <outlet property="datePicker" destination="FJc-7f-a0e" id="8YH-48-DGi"/>
+                        <outlet property="nomeLabel" destination="gqB-8E-YvI" id="sKU-C2-HXi"/>
+                        <outlet property="nomeTextField" destination="eSV-46-Wu4" id="xYT-e0-OJi"/>
+                        <outlet property="telefoneLabel" destination="Aw3-pq-tjc" id="yky-Mc-jlw"/>
+                        <outlet property="telefoneTextField" destination="ARb-pU-OmC" id="LIW-nV-OXQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
