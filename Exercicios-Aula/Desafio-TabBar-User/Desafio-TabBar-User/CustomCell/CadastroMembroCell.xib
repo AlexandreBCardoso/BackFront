@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CadastroMembroCell" rowHeight="114" id="KGk-i7-Jjw" customClass="CadastroMembroCell" customModule="Desafio_TabBar_User" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRn-we-nY3">
+                        <rect key="frame" x="10" y="5" width="428" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MfR-hi-neL">
+                                <rect key="frame" x="15" y="16.5" width="80" height="77"/>
+                                <color key="tintColor" red="0.305099179" green="0.305099179" blue="0.305099179" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="ut6-0O-TBK"/>
+                                    <constraint firstAttribute="height" constant="80" id="wvM-W5-dSQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alexandre Cardoso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kk-8h-3WW">
+                                <rect key="frame" x="105" y="15" width="207.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idade: 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHU-lW-BAG">
+                                <rect key="frame" x="105" y="42.5" width="80" height="15.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="X3q-qp-eCn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="mainBackFront"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="7ZM-sX-7C6"/>
+                            <constraint firstItem="lHU-lW-BAG" firstAttribute="centerY" secondItem="zRn-we-nY3" secondAttribute="centerY" id="LPN-a4-jUc"/>
+                            <constraint firstItem="MfR-hi-neL" firstAttribute="leading" secondItem="zRn-we-nY3" secondAttribute="leading" constant="15" id="ehH-Be-dgC"/>
+                            <constraint firstItem="lHU-lW-BAG" firstAttribute="leading" secondItem="MfR-hi-neL" secondAttribute="trailing" constant="10" id="l4n-1Q-w8S"/>
+                            <constraint firstItem="MfR-hi-neL" firstAttribute="top" secondItem="zRn-we-nY3" secondAttribute="top" constant="15" id="mot-Yd-jso"/>
+                            <constraint firstItem="4Kk-8h-3WW" firstAttribute="leading" secondItem="MfR-hi-neL" secondAttribute="trailing" constant="10" id="svN-CM-47A"/>
+                            <constraint firstItem="4Kk-8h-3WW" firstAttribute="top" secondItem="MfR-hi-neL" secondAttribute="top" id="zd4-wo-gX1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zRn-we-nY3" secondAttribute="trailing" constant="10" id="Aca-LY-Cg4"/>
+                    <constraint firstItem="zRn-we-nY3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="UW9-rQ-fzl"/>
+                    <constraint firstAttribute="bottom" secondItem="zRn-we-nY3" secondAttribute="bottom" constant="5" id="czk-9I-0kR"/>
+                    <constraint firstItem="zRn-we-nY3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hTy-BN-SHZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="idadeLabel" destination="lHU-lW-BAG" id="gbf-2z-cOF"/>
+                <outlet property="imageMembroImageView" destination="MfR-hi-neL" id="KKb-kS-AyO"/>
+                <outlet property="nomeLabel" destination="4Kk-8h-3WW" id="qN3-cM-4u6"/>
+                <outlet property="telaView" destination="zRn-we-nY3" id="YM7-1F-ac7"/>
+            </connections>
+            <point key="canvasLocation" x="221.73913043478262" y="87.053571428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <namedColor name="mainBackFront">
+            <color red="0.10999999940395355" green="0.77600002288818359" blue="0.86299997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
