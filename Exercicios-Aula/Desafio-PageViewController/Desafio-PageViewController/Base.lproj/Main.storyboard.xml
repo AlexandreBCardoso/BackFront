@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OQN-Y4-Wmp">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="rcT-uy-4Uk">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="OQN-Y4-Wmp" customClass="PageViewController" customModule="Desafio_PageViewController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WdI-S7-5rQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306" y="40"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rn4-jb-YOk">
+            <objects>
+                <viewController storyboardIdentifier="Tela01ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uop-Cr-WB0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EPO-lD-b6k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tela 01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7H-yY-9vE">
+                                <rect key="frame" x="161.66666666666666" y="430" width="91" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2pq-Yh-0Ph"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="f7H-yY-9vE" firstAttribute="centerX" secondItem="EPO-lD-b6k" secondAttribute="centerX" id="88B-0v-ocE"/>
+                            <constraint firstItem="f7H-yY-9vE" firstAttribute="centerY" secondItem="EPO-lD-b6k" secondAttribute="centerY" id="bs1-6u-1hs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQz-nb-qmD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="40"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vG1-oM-ADj">
+            <objects>
+                <viewController storyboardIdentifier="Tela02ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QGa-al-hvy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kwF-0q-oxe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tela 02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxz-a3-I7J">
+                                <rect key="frame" x="160" y="430" width="94" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HxJ-8n-LE6"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="rxz-a3-I7J" firstAttribute="centerY" secondItem="kwF-0q-oxe" secondAttribute="centerY" id="eUL-Kc-mfV"/>
+                            <constraint firstItem="rxz-a3-I7J" firstAttribute="centerX" secondItem="kwF-0q-oxe" secondAttribute="centerX" id="qBs-zq-tfx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QcN-Or-gfS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="40"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DBr-ek-9X6">
+            <objects>
+                <viewController storyboardIdentifier="Tela03ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B6k-qC-BgQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dbr-zH-DgN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tela 03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7z7-It-411">
+                                <rect key="frame" x="159.66666666666666" y="430" width="95" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6EK-AZ-TMo"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="7z7-It-411" firstAttribute="centerX" secondItem="Dbr-zH-DgN" secondAttribute="centerX" id="6cV-I5-p4n"/>
+                            <constraint firstItem="7z7-It-411" firstAttribute="centerY" secondItem="Dbr-zH-DgN" secondAttribute="centerY" id="SsH-nL-c7C"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uyy-mP-VgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2071" y="40"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GxT-a2-XdI">
+            <objects>
+                <viewController storyboardIdentifier="Tela04ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kTo-re-lqg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YFc-Aw-Atn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tela 04" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7G-B3-35k">
+                                <rect key="frame" x="159" y="430" width="96" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nCp-nk-h8C"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="Q7G-B3-35k" firstAttribute="centerX" secondItem="YFc-Aw-Atn" secondAttribute="centerX" id="8mS-YB-xJl"/>
+                            <constraint firstItem="Q7G-B3-35k" firstAttribute="centerY" secondItem="YFc-Aw-Atn" secondAttribute="centerY" id="SUU-4t-JTS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLm-RP-i2z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2861" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

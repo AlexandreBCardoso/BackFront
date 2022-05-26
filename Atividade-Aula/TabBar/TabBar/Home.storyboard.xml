@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZWk-oH-FAi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tela 02-->
+        <scene sceneID="jfo-mV-XRY">
+            <objects>
+                <viewController id="XPK-WJ-gfl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJR-CH-g23">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="V3Z-ra-RXJ"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tela 02" image="pencil" catalog="system" selectedImage="plus.rectangle.fill.on.folder.fill" id="yMz-jg-nNt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNw-D6-MVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="372"/>
+        </scene>
+        <!--Tela 01-->
+        <scene sceneID="Jnu-M5-FGd">
+            <objects>
+                <viewController id="NDR-vt-5As" customClass="Tela01VC" customModule="TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WHW-bm-yzL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CfP-wX-Xu7">
+                                <rect key="frame" x="20" y="75.5" width="374" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="End-VN-5jg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hev-Hc-tKX">
+                                <rect key="frame" x="157.5" y="254" width="99" height="30"/>
+                                <state key="normal" title="Editar Imagem"/>
+                                <connections>
+                                    <action selector="tappedEditarImagemButton:" destination="NDR-vt-5As" eventType="touchUpInside" id="Dx3-Dz-9nL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bTO-Cs-Ywu"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="hev-Hc-tKX" firstAttribute="top" secondItem="CfP-wX-Xu7" secondAttribute="bottom" constant="30" id="0bM-qZ-JQ5"/>
+                            <constraint firstItem="CfP-wX-Xu7" firstAttribute="leading" secondItem="bTO-Cs-Ywu" secondAttribute="leading" constant="20" id="X7P-Mq-vMK"/>
+                            <constraint firstItem="hev-Hc-tKX" firstAttribute="centerX" secondItem="WHW-bm-yzL" secondAttribute="centerX" id="r9l-b4-DTe"/>
+                            <constraint firstItem="CfP-wX-Xu7" firstAttribute="top" secondItem="bTO-Cs-Ywu" secondAttribute="top" constant="30" id="yN3-qg-hcM"/>
+                            <constraint firstItem="bTO-Cs-Ywu" firstAttribute="trailing" secondItem="CfP-wX-Xu7" secondAttribute="trailing" constant="20" id="z8b-TL-8st"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tela 01" image="person.fill.turn.right" catalog="system" selectedImage="person" id="ARp-4C-2tS"/>
+                    <connections>
+                        <outlet property="imageUserImageView" destination="CfP-wX-Xu7" id="bPT-of-ZSi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1O-La-Ph3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-777" y="372"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Y2g-59-0av">
+            <objects>
+                <tabBarController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="ZWk-oH-FAi" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QxF-7U-5Xs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NDR-vt-5As" kind="relationship" relationship="viewControllers" id="RkT-Kr-lP1"/>
+                        <segue destination="XPK-WJ-gfl" kind="relationship" relationship="viewControllers" id="1LS-Ka-LYM"/>
+                        <segue destination="XpE-No-Qdg" kind="relationship" relationship="viewControllers" id="dtl-4q-l49"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPd-Mi-dSZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-322" y="-384"/>
+        </scene>
+        <!--Tela 03-->
+        <scene sceneID="vzZ-ja-4xK">
+            <objects>
+                <viewController id="XpE-No-Qdg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ks-Np-MS4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ehz-9M-nbF"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tela 03" image="trash.fill" catalog="system" selectedImage="square.and.arrow.up" id="Pf0-u1-jAb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGN-7M-cP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="-384"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="person.fill.turn.right" catalog="system" width="128" height="107"/>
+        <image name="plus.rectangle.fill.on.folder.fill" catalog="system" width="128" height="96"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

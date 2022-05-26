@@ -31,7 +31,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alexandre Cardoso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kk-8h-3WW">
                                 <rect key="frame" x="105" y="15" width="207.5" height="20.5"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idade: 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHU-lW-BAG">
@@ -40,11 +40,11 @@
                                     <constraint firstAttribute="width" constant="80" id="X3q-qp-eCn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="mainBackFront"/>
+                        <color key="backgroundColor" name="black2"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="7ZM-sX-7C6"/>
                             <constraint firstItem="lHU-lW-BAG" firstAttribute="centerY" secondItem="zRn-we-nY3" secondAttribute="centerY" id="LPN-a4-jUc"/>
@@ -76,8 +76,8 @@
     </objects>
     <resources>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <namedColor name="mainBackFront">
-            <color red="0.10999999940395355" green="0.77600002288818359" blue="0.86299997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="black2">
+            <color red="0.22400000691413879" green="0.20000000298023224" blue="0.27500000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

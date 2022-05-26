@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC45B91A25DB1E620050AA81 /* ProfessorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC45B91825DB1E620050AA81 /* ProfessorTableViewCell.swift */; };
 		BC45B91B25DB1E620050AA81 /* ProfessorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC45B91925DB1E620050AA81 /* ProfessorTableViewCell.xib */; };
+		BC54B21325DC76270068D157 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC54B21225DC76270068D157 /* Home.storyboard */; };
 		BC810F1525D9A5CF0052E8A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC810F1425D9A5CF0052E8A6 /* AppDelegate.swift */; };
 		BC810F1725D9A5CF0052E8A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC810F1625D9A5CF0052E8A6 /* SceneDelegate.swift */; };
 		BC810F1925D9A5CF0052E8A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC810F1825D9A5CF0052E8A6 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		BC45B91825DB1E620050AA81 /* ProfessorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorTableViewCell.swift; sourceTree = "<group>"; };
 		BC45B91925DB1E620050AA81 /* ProfessorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfessorTableViewCell.xib; sourceTree = "<group>"; };
+		BC54B21225DC76270068D157 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		BC810F1125D9A5CF0052E8A6 /* Desafio-TabBar-User.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-TabBar-User.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC810F1425D9A5CF0052E8A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC810F1625D9A5CF0052E8A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				BC810F1A25D9A5CF0052E8A6 /* Main.storyboard */,
 				BC810F1F25D9A5D50052E8A6 /* LaunchScreen.storyboard */,
+				BC54B21225DC76270068D157 /* Home.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				BC45B91B25DB1E620050AA81 /* ProfessorTableViewCell.xib in Resources */,
 				BC810F2125D9A5D50052E8A6 /* LaunchScreen.storyboard in Resources */,
 				BCD23D1C25D9E62A001C9C7C /* CadastroMembroCell.xib in Resources */,
+				BC54B21325DC76270068D157 /* Home.storyboard in Resources */,
 				BC810F1E25D9A5D50052E8A6 /* Assets.xcassets in Resources */,
 				BC810F1C25D9A5CF0052E8A6 /* Main.storyboard in Resources */,
 			);

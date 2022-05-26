@@ -37,10 +37,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
+		let carro = self.carros[indexPath.row]
+		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "celulaReuso", for: indexPath)
 		
 		cell.imageView?.image = UIImage(named: "imagemCarro")
-		cell.textLabel?.text = self.carros[indexPath.row]
+		cell.textLabel?.text = carro
 		
 		return cell
 	}
@@ -49,6 +51,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 		print(carros[indexPath.row])
 	}
 	
+	func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+		print(#function)
+	}
 	
 	
 }

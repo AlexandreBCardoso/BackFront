@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Elementos_UIConfiguration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lo0-J6-AO6">
+                                <rect key="frame" x="60" y="114" width="294" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="tappedSegmented:" destination="BYZ-38-t0r" eventType="valueChanged" id="N0C-Zr-Rok"/>
+                                </connections>
+                            </segmentedControl>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="pss-V3-oMM">
+                                <rect key="frame" x="253.5" y="208" width="94" height="32"/>
+                                <connections>
+                                    <action selector="tappedStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="fZd-Mh-a1F"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjo-X1-3pX">
+                                <rect key="frame" x="83" y="213.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ku-6b-YYX">
+                                <rect key="frame" x="276" y="296" width="51" height="31"/>
+                                <connections>
+                                    <action selector="tappedSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="4VE-7i-bOl"/>
+                                </connections>
+                            </switch>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HkM-87-Ysl">
+                                <rect key="frame" x="83" y="379" width="271" height="4"/>
+                                <color key="trackTintColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys4-Es-US6">
+                                <rect key="frame" x="83" y="301" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xjo-X1-3pX" firstAttribute="centerY" secondItem="pss-V3-oMM" secondAttribute="centerY" id="22T-Fm-ONB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HkM-87-Ysl" secondAttribute="bottom" constant="479" id="7D2-Ex-aER"/>
+                            <constraint firstItem="HkM-87-Ysl" firstAttribute="top" secondItem="ys4-Es-US6" secondAttribute="bottom" constant="57" id="AXH-1O-z2v"/>
+                            <constraint firstItem="ys4-Es-US6" firstAttribute="top" secondItem="Xjo-X1-3pX" secondAttribute="bottom" constant="66.5" id="AfQ-cL-xgt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ku-6b-YYX" secondAttribute="trailing" constant="89" id="EoW-aF-Fj0"/>
+                            <constraint firstItem="lo0-J6-AO6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="FfR-Rt-ud3"/>
+                            <constraint firstItem="4ku-6b-YYX" firstAttribute="top" secondItem="pss-V3-oMM" secondAttribute="bottom" constant="56" id="HZW-Ry-J7Y"/>
+                            <constraint firstItem="4ku-6b-YYX" firstAttribute="leading" secondItem="ys4-Es-US6" secondAttribute="trailing" constant="95" id="M3S-Y8-FcO"/>
+                            <constraint firstItem="HkM-87-Ysl" firstAttribute="leading" secondItem="Xjo-X1-3pX" secondAttribute="leading" id="MKU-TV-Kwn"/>
+                            <constraint firstItem="lo0-J6-AO6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="MkA-b4-1DI"/>
+                            <constraint firstItem="HkM-87-Ysl" firstAttribute="trailing" secondItem="lo0-J6-AO6" secondAttribute="trailing" id="Oo3-rX-tGM"/>
+                            <constraint firstItem="ys4-Es-US6" firstAttribute="centerY" secondItem="4ku-6b-YYX" secondAttribute="centerY" id="P7f-eN-URs"/>
+                            <constraint firstItem="HkM-87-Ysl" firstAttribute="top" secondItem="4ku-6b-YYX" secondAttribute="bottom" constant="52" id="b8x-eV-Yao"/>
+                            <constraint firstItem="4ku-6b-YYX" firstAttribute="centerX" secondItem="pss-V3-oMM" secondAttribute="centerX" id="eMJ-jZ-kA5"/>
+                            <constraint firstItem="HkM-87-Ysl" firstAttribute="leading" secondItem="ys4-Es-US6" secondAttribute="leading" id="fdX-0F-qCp"/>
+                            <constraint firstItem="HkM-87-Ysl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="iWk-R6-o5D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lo0-J6-AO6" secondAttribute="trailing" constant="60" id="viU-rf-9DR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progress" destination="HkM-87-Ysl" id="tge-qv-xpe"/>
+                        <outlet property="segmentControl" destination="lo0-J6-AO6" id="pi2-x2-jxF"/>
+                        <outlet property="stepper" destination="pss-V3-oMM" id="CG9-ov-KVw"/>
+                        <outlet property="switchOutlet" destination="4ku-6b-YYX" id="JW3-tU-bHe"/>
+                        <outlet property="valueStepperLabel" destination="Xjo-X1-3pX" id="MQZ-9T-JA7"/>
+                        <outlet property="valueSwitchLabel" destination="ys4-Es-US6" id="VwW-xk-lYj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-851" y="11"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

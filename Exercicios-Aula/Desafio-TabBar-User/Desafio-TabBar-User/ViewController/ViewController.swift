@@ -38,7 +38,7 @@ class ViewController: UIViewController {
 		self.tableView.delegate = self
 		self.tableView.dataSource = self
 		self.tableView.separatorStyle = .none
-		self.tableView.backgroundColor = #colorLiteral(red: 0.1443515718, green: 0.1443831027, blue: 0.1443473697, alpha: 1)
+		self.tableView.backgroundColor = #colorLiteral(red: 0.06274509804, green: 0.06274509804, blue: 0.08235294118, alpha: 1)
 		self.tableView.register(CadastroMembroCell.nib(), forCellReuseIdentifier: CadastroMembroCell.identifier)
 		self.tableView.register(ProfessorTableViewCell.nib(), forCellReuseIdentifier: ProfessorTableViewCell.identifier)
 	}

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4WH-X4-TMm">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tela 01-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navigation_Protocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evL-O8-WbQ">
+                                <rect key="frame" x="164" y="430" width="86" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Ir Tela 02">
+                                    <color key="titleColor" red="0.0078431372550000003" green="0.1529411765" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dVz-W2-rvK" kind="show" identifier="Tela_02VC" id="EYG-pF-Pa1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtG-lt-0gY">
+                                <rect key="frame" x="163.5" y="506" width="87" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Ir Tela 03">
+                                    <color key="titleColor" red="0.0078431372550000003" green="0.1529411765" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iHz-lP-6au" kind="show" identifier="Tela_03VC" id="TKH-dT-XxH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkw-25-xpa">
+                                <rect key="frame" x="30" y="642" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="evL-O8-WbQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1do-l6-1fc"/>
+                            <constraint firstItem="Jkw-25-xpa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1iM-JQ-ojW"/>
+                            <constraint firstItem="evL-O8-WbQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="935-G0-J8T"/>
+                            <constraint firstItem="Jkw-25-xpa" firstAttribute="top" secondItem="CtG-lt-0gY" secondAttribute="bottom" constant="100" id="BPs-Fw-Ps3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jkw-25-xpa" secondAttribute="trailing" constant="30" id="HA1-NE-CMA"/>
+                            <constraint firstItem="CtG-lt-0gY" firstAttribute="top" secondItem="evL-O8-WbQ" secondAttribute="bottom" constant="40" id="NxX-Cc-OKI"/>
+                            <constraint firstItem="CtG-lt-0gY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZSw-ZM-eIg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela 01" id="OLj-c2-4gs">
+                        <barButtonItem key="backBarButtonItem" title="Voltar Tela 01" id="adY-YW-O1h"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="labelTela01" destination="Jkw-25-xpa" id="voW-ke-ZqO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.57971014492762" y="101.78571428571428"/>
+        </scene>
+        <!--Tela 03-->
+        <scene sceneID="koe-G7-L2L">
+            <objects>
+                <viewController id="iHz-lP-6au" customClass="Tela_03ViewController" customModule="Navigation_Protocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mma-Ro-bHX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJQ-IP-9Eq">
+                                <rect key="frame" x="164" y="430" width="86" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Ir Tela 02">
+                                    <color key="titleColor" red="0.0078431372550000003" green="0.1529411765" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dVz-W2-rvK" kind="show" identifier="Tela_02VC" id="8TL-Gw-2aB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cy4-WK-dLa">
+                                <rect key="frame" x="164" y="502" width="87" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Ir Tela 04">
+                                    <color key="titleColor" red="0.0078431372550000003" green="0.1529411765" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zXy-UO-Rfn" kind="show" id="kQE-El-nr4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7id-iY-oIJ"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="NJQ-IP-9Eq" firstAttribute="centerY" secondItem="Mma-Ro-bHX" secondAttribute="centerY" id="DYt-fc-gkb"/>
+                            <constraint firstItem="NJQ-IP-9Eq" firstAttribute="centerX" secondItem="Mma-Ro-bHX" secondAttribute="centerX" id="l1C-BT-TQw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela 03" id="X29-7N-aJh">
+                        <barButtonItem key="backBarButtonItem" title="Voltar Tela 03" id="uww-jf-jtN"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjs-bc-rMV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841" y="838"/>
+        </scene>
+        <!--Tela 04-->
+        <scene sceneID="zUv-Fh-cbE">
+            <objects>
+                <viewController id="zXy-UO-Rfn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PhD-PU-3cR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6TG-KW-Kyt"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela 04" id="fZV-1L-aha">
+                        <barButtonItem key="backBarButtonItem" title="Voltar Tela 04" id="R98-xE-tPw"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRe-vg-98E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1675" y="838"/>
+        </scene>
+        <!--Tela 02-->
+        <scene sceneID="14w-4Z-s7Y">
+            <objects>
+                <viewController id="dVz-W2-rvK" customClass="Tela_02ViewController" customModule="Navigation_Protocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0u8-4H-FCa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NvE-lh-SGr">
+                                <rect key="frame" x="157.5" y="430" width="99" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Voltar Tela">
+                                    <color key="titleColor" red="0.0078431372550000003" green="0.1529411765" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedVoltarTela:" destination="dVz-W2-rvK" eventType="touchUpInside" id="6aE-Zr-Had"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIT-A2-dZZ">
+                                <rect key="frame" x="177.5" y="516" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite para aparecer na tela 01" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HVP-TX-SWM">
+                                <rect key="frame" x="80" y="208" width="254" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H32-LN-qxG"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="NvE-lh-SGr" firstAttribute="centerY" secondItem="0u8-4H-FCa" secondAttribute="centerY" id="7go-TH-Sjb"/>
+                            <constraint firstItem="NvE-lh-SGr" firstAttribute="centerX" secondItem="0u8-4H-FCa" secondAttribute="centerX" id="9Z6-Rx-FQv"/>
+                            <constraint firstItem="CIT-A2-dZZ" firstAttribute="centerX" secondItem="0u8-4H-FCa" secondAttribute="centerX" id="MWN-Wy-KTp"/>
+                            <constraint firstItem="H32-LN-qxG" firstAttribute="trailing" secondItem="HVP-TX-SWM" secondAttribute="trailing" constant="80" id="Mt2-V7-izk"/>
+                            <constraint firstItem="CIT-A2-dZZ" firstAttribute="top" secondItem="NvE-lh-SGr" secondAttribute="bottom" constant="50" id="NWi-Wq-t58"/>
+                            <constraint firstItem="HVP-TX-SWM" firstAttribute="top" secondItem="H32-LN-qxG" secondAttribute="top" constant="120" id="drP-jQ-fqE"/>
+                            <constraint firstItem="HVP-TX-SWM" firstAttribute="leading" secondItem="H32-LN-qxG" secondAttribute="leading" constant="80" id="ugc-Sb-2Ey"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela 02" id="gaC-dr-nh1">
+                        <barButtonItem key="backBarButtonItem" title="Voltar Tela 02" id="Icq-Rn-L0i"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="valueLabel" destination="CIT-A2-dZZ" id="a55-6Z-sv1"/>
+                        <outlet property="valueTextField" destination="HVP-TX-SWM" id="evP-FE-HTZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ExV-yf-oVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="102"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BaI-3a-Mzj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4WH-X4-TMm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gx7-iC-ihg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Dji-S1-Sq6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYL-on-VkR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="102.45535714285714"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="EYG-pF-Pa1"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

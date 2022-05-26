@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tela01 View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Tela01ViewController" customModule="Delegate_Protocols" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mto-GR-dwg">
+                                <rect key="frame" x="50" y="782" width="314" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gg8-4v-P9f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Clique Aqui">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeA-LL-y7w"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconApple" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-ai-GN4">
+                                <rect key="frame" x="92" y="184" width="230" height="230"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="BUS-aP-GIa"/>
+                                    <constraint firstAttribute="width" constant="230" id="FO1-1G-ooI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxp-55-c0z">
+                                <rect key="frame" x="20" y="434" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SR5-Ao-kne"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ddd-ai-GN4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="5OW-Ei-ISO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pxp-55-c0z" secondAttribute="trailing" constant="20" id="KV2-NX-ntZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mto-GR-dwg" secondAttribute="trailing" constant="50" id="cph-In-eJD"/>
+                            <constraint firstItem="Pxp-55-c0z" firstAttribute="top" secondItem="ddd-ai-GN4" secondAttribute="bottom" constant="20" id="eeg-Ne-4nz"/>
+                            <constraint firstItem="Pxp-55-c0z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eo9-gl-Oej"/>
+                            <constraint firstItem="Mto-GR-dwg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fik-Pt-R7c"/>
+                            <constraint firstItem="ddd-ai-GN4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l2r-WL-rOd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mto-GR-dwg" secondAttribute="bottom" constant="30" id="r9K-7X-Cxl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagemView" destination="ddd-ai-GN4" id="flf-w6-G3G"/>
+                        <outlet property="textoLabel" destination="Pxp-55-c0z" id="FnN-OZ-OJ9"/>
+                        <segue destination="P5P-Sg-3dY" kind="presentation" identifier="segueTela02" modalPresentationStyle="fullScreen" id="Ueh-x8-mHZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="76.339285714285708"/>
+        </scene>
+        <!--Tela02 View Controller-->
+        <scene sceneID="mRT-a0-0TW">
+            <objects>
+                <viewController id="P5P-Sg-3dY" customClass="Tela02ViewController" customModule="Delegate_Protocols" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tOk-kZ-NI9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opções" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJY-90-urj">
+                                <rect key="frame" x="161.5" y="74" width="91" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.98431372549999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQv-5u-aht">
+                                <rect key="frame" x="92" y="184" width="230" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="ClB-3e-8YG"/>
+                                    <constraint firstAttribute="width" constant="230" id="hA3-G5-9eh"/>
+                                </constraints>
+                                <state key="normal" image="iconMacbook1"/>
+                                <connections>
+                                    <action selector="tappedMacbookButton:" destination="P5P-Sg-3dY" eventType="touchUpInside" id="GUC-0g-oS3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAA-Vp-5o3">
+                                <rect key="frame" x="92" y="416" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="diN-bg-PgQ"/>
+                                    <constraint firstAttribute="width" constant="230" id="o7e-YV-c6c"/>
+                                </constraints>
+                                <state key="normal" image="iconImac2"/>
+                                <connections>
+                                    <action selector="tappedImacButton:" destination="P5P-Sg-3dY" eventType="touchUpInside" id="Aix-rs-TCO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h4a-K4-MGR"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iQv-5u-aht" firstAttribute="top" secondItem="GJY-90-urj" secondAttribute="bottom" constant="80" id="BBF-AM-pmR"/>
+                            <constraint firstItem="GJY-90-urj" firstAttribute="top" secondItem="h4a-K4-MGR" secondAttribute="top" constant="30" id="PHV-k1-crC"/>
+                            <constraint firstItem="hAA-Vp-5o3" firstAttribute="centerX" secondItem="tOk-kZ-NI9" secondAttribute="centerX" id="RKj-e7-l9B"/>
+                            <constraint firstItem="hAA-Vp-5o3" firstAttribute="top" secondItem="iQv-5u-aht" secondAttribute="bottom" constant="80" id="Ucc-bO-atN"/>
+                            <constraint firstItem="iQv-5u-aht" firstAttribute="centerX" secondItem="tOk-kZ-NI9" secondAttribute="centerX" id="XnR-Ev-Bjc"/>
+                            <constraint firstItem="GJY-90-urj" firstAttribute="centerX" secondItem="tOk-kZ-NI9" secondAttribute="centerX" id="ybh-KJ-nak"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kNm-ta-cP8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kb7-vk-49N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898.55072463768124" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconApple" width="244" height="300"/>
+        <image name="iconImac2" width="512" height="512"/>
+        <image name="iconMacbook1" width="1499" height="802"/>
+    </resources>
+</document>

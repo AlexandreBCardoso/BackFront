@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardViewAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filmev12" translatesAutoresizingMaskIntoConstraints="NO" id="Fvt-tl-b2x">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LWK-aZ-5qc">
+                                <rect key="frame" x="0.0" y="815" width="428" height="769"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="LWV-5T-62W" kind="embed" id="Eyr-M6-aeL"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fvt-tl-b2x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Qj-7I-POa"/>
+                            <constraint firstItem="Fvt-tl-b2x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="G1s-n9-tSn"/>
+                            <constraint firstAttribute="bottom" secondItem="Fvt-tl-b2x" secondAttribute="bottom" id="PCe-kg-zAU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fvt-tl-b2x" secondAttribute="trailing" id="qEo-sT-IMh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="LWK-aZ-5qc" id="aD0-Yb-Wek"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-492.0560747663551" y="-40.172786177105834"/>
+        </scene>
+        <!--Card View Controller-->
+        <scene sceneID="Yws-hV-1Zs">
+            <objects>
+                <viewController id="LWV-5T-62W" customClass="CardViewController" customModule="CardViewAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SJd-nL-8ri">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="769"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jS-Xl-eE8">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="65"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="UuC-gL-SCv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="4jS-Xl-eE8" firstAttribute="leading" secondItem="SJd-nL-8ri" secondAttribute="leading" id="M7p-C1-FhH"/>
+                            <constraint firstAttribute="trailing" secondItem="4jS-Xl-eE8" secondAttribute="trailing" id="TZ3-8W-OZX"/>
+                            <constraint firstItem="4jS-Xl-eE8" firstAttribute="top" secondItem="SJd-nL-8ri" secondAttribute="top" id="rb7-jo-ju7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="handlerView" destination="4jS-Xl-eE8" id="Grp-S8-qbw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eys-4f-cBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413.55140186915884" y="-15.226781857451405"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filmev12" width="500" height="750"/>
+        <namedColor name="backgroundColor">
+            <color red="0.0080000003799796104" green="0.15299999713897705" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

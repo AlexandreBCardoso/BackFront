@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TBL-HL-Dck">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tela 01-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Tela01ViewController" customModule="NotificationCenterTabbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngS-pk-GdE">
+                                <rect key="frame" x="30" y="104" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YCy-ab-ZqS">
+                                <rect key="frame" x="30" y="178" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9uY-hi-gXO">
+                                <rect key="frame" x="182.5" y="272" width="51" height="31"/>
+                                <connections>
+                                    <action selector="didAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="4cu-0H-DjQ"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ngS-pk-GdE" secondAttribute="trailing" constant="30" id="FxB-5r-NIq"/>
+                            <constraint firstItem="ngS-pk-GdE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="NNk-Wf-8qa"/>
+                            <constraint firstItem="9uY-hi-gXO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Psk-hj-Qme"/>
+                            <constraint firstItem="YCy-ab-ZqS" firstAttribute="top" secondItem="ngS-pk-GdE" secondAttribute="bottom" constant="40" id="efN-ct-KJV"/>
+                            <constraint firstItem="ngS-pk-GdE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="oxY-s3-NnA"/>
+                            <constraint firstItem="9uY-hi-gXO" firstAttribute="top" secondItem="YCy-ab-ZqS" secondAttribute="bottom" constant="60" id="qOf-2G-aK3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YCy-ab-ZqS" secondAttribute="trailing" constant="30" id="we0-P3-2l5"/>
+                            <constraint firstItem="YCy-ab-ZqS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="xRF-Oa-vNO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tela 01" image="pencil.circle.fill" catalog="system" id="FlV-4X-Rnw"/>
+                    <connections>
+                        <outlet property="text1TextField" destination="ngS-pk-GdE" id="MjQ-5q-vih"/>
+                        <outlet property="text2TextField" destination="YCy-ab-ZqS" id="BZX-V7-lxh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-655" y="844"/>
+        </scene>
+        <!--Tela 02-->
+        <scene sceneID="V62-tW-z2x">
+            <objects>
+                <viewController id="hde-cB-05c" customClass="Tela02ViewController" customModule="NotificationCenterTabbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yD9-Om-7NW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sop-jD-wXD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="noT-M0-lHr"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="noT-M0-lHr" firstAttribute="trailing" secondItem="sop-jD-wXD" secondAttribute="trailing" id="Bm2-Sl-KTL"/>
+                            <constraint firstItem="noT-M0-lHr" firstAttribute="bottom" secondItem="sop-jD-wXD" secondAttribute="bottom" id="G1l-Bk-ybi"/>
+                            <constraint firstItem="sop-jD-wXD" firstAttribute="top" secondItem="noT-M0-lHr" secondAttribute="top" id="hqJ-0i-Tkw"/>
+                            <constraint firstItem="sop-jD-wXD" firstAttribute="leading" secondItem="noT-M0-lHr" secondAttribute="leading" id="sUj-Xq-2s8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tela 02" image="folder.fill" catalog="system" id="Hr3-NU-TAS"/>
+                    <connections>
+                        <outlet property="web" destination="sop-jD-wXD" id="mwW-id-0MQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPZ-jb-jJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="844"/>
+        </scene>
+        <!--Tela 03-->
+        <scene sceneID="T0p-TS-E9D">
+            <objects>
+                <viewController id="e3w-ht-Qpb" customClass="Tela03ViewController" customModule="NotificationCenterTabbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zTz-3J-gRU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLs-Ep-EkH">
+                                <rect key="frame" x="50" y="84" width="314" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1pw-zN-mYU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Alterar para Azul">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedAlterarButton:" destination="e3w-ht-Qpb" eventType="touchUpInside" id="f2T-iq-92b"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3QK-Kn-JSG">
+                                <rect key="frame" x="182.5" y="194" width="51" height="31"/>
+                                <connections>
+                                    <action selector="tappedAction:" destination="e3w-ht-Qpb" eventType="valueChanged" id="wCt-Gg-r2c"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7PV-Ag-60i"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="xLs-Ep-EkH" firstAttribute="top" secondItem="7PV-Ag-60i" secondAttribute="top" constant="40" id="7Dc-DN-odn"/>
+                            <constraint firstItem="3QK-Kn-JSG" firstAttribute="top" secondItem="xLs-Ep-EkH" secondAttribute="bottom" constant="60" id="JhN-5R-6q6"/>
+                            <constraint firstItem="3QK-Kn-JSG" firstAttribute="centerX" secondItem="zTz-3J-gRU" secondAttribute="centerX" id="q2o-o3-wdg"/>
+                            <constraint firstItem="xLs-Ep-EkH" firstAttribute="leading" secondItem="7PV-Ag-60i" secondAttribute="leading" constant="50" id="xGW-WO-WmF"/>
+                            <constraint firstItem="7PV-Ag-60i" firstAttribute="trailing" secondItem="xLs-Ep-EkH" secondAttribute="trailing" constant="50" id="ziB-ay-bQc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tela 03" image="externaldrive.fill" catalog="system" id="Rci-AB-vpq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5G-Hc-6R2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="899" y="844"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tM6-My-Z7h">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TBL-HL-Dck" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RVh-p6-ySq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="8CP-ZY-25U"/>
+                        <segue destination="hde-cB-05c" kind="relationship" relationship="viewControllers" id="xxB-jV-6ba"/>
+                        <segue destination="e3w-ht-Qpb" kind="relationship" relationship="viewControllers" id="XXn-7N-0J8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jer-CA-Lk3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="externaldrive.fill" catalog="system" width="128" height="87"/>
+        <image name="folder.fill" catalog="system" width="128" height="97"/>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
